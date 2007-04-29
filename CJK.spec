@@ -15,8 +15,8 @@ Source2: zhconv.c
 Source3: zhlatex
 Source4: special.map.add
 Source5: ttfonts.map.add
-Patch1: CJK-hbf2gf.patch.bz2
-Patch2: CJK-lisp.patch.bz2
+Patch1: CJK-hbf2gf.patch
+Patch2: CJK-lisp.patch
 
 Requires: tetex >= 0.9 tetex-latex >= 0.9 freetype
 Prereq: tetex tetex-latex freetype
@@ -48,7 +48,7 @@ updated when the .ltx file is saved.  Emacs will also know about the
 
 # Fix to the emacs lisp code
 
-%patch2 -p1
+#%patch2 -p1
 
 %build
 
