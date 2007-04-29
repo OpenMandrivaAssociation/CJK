@@ -3,12 +3,12 @@ Summary: LaTeX2e macro package for Chinese/Japanese/Korean scripts
 License: GPL
 Group: Publishing
 URL:	http://cjk.ffii.org/
-Version: 4.2.0
-Release: 7mdk
+Version: 4.7.0
+Release: %mkrel 1
 
 # Source0 is a tarball of the CJK files stored in the FTP directory,
 # they are stored there unpacked.
-Source0: ftp://tug2.cs.umb.edu/tex-archive/language/chinese/CJK-4.2.0.tar.bz2
+Source0: ftp://tug2.cs.umb.edu/tex-archive/language/chinese/%{name}-%{version}.tar.gz
 # font def
 Source1: cjk-420-mdk.tar.bz2
 Source2: zhconv.c
