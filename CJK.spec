@@ -19,7 +19,8 @@ Patch1: CJK-hbf2gf.patch
 Patch2: CJK-lisp.patch
 
 Requires: tetex >= 0.9 tetex-latex >= 0.9 freetype
-Prereq: tetex tetex-latex freetype
+Requires(post): tetex tetex-latex freetype
+Requires(postun): tetex tetex-latex freetype
 BuildRequires:	tetex-devel
 BuildRoot:	%_tmppath/%name-%version-%release-root
 
