@@ -107,7 +107,7 @@ cd utils
  cd ..
 cd ..
 
-# CJK TrueType fonts for Mandrake
+# CJK TrueType fonts for Mandriva
 tar xjf %{SOURCE1} -C %{buildroot}/usr/share
 
 mkdir -p %{buildroot}/usr/share/emacs/site-lisp
