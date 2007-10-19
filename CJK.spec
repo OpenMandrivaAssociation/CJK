@@ -8,7 +8,7 @@ Release: %mkrel 1
 
 # Source0 is a tarball of the CJK files stored in the FTP directory,
 # they are stored there unpacked.
-Source0: ftp://tug2.cs.umb.edu/tex-archive/language/chinese/%{name}-%{version}.tar.gz
+Source0: http://cjk.ffii.org/cjk-%{version}.tar.gz
 # font def
 Source1: cjk-420-mdk.tar.bz2
 Source2: zhconv.c
