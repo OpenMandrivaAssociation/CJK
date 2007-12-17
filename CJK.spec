@@ -22,7 +22,6 @@ Requires: tetex >= 0.9 tetex-latex >= 0.9 freetype
 Requires(post): tetex tetex-latex freetype
 Requires(postun): tetex tetex-latex freetype
 BuildRequires:	tetex-devel
-BuildRoot:	%_tmppath/%name-%version-%release-root
 
 %description
 This is a package of macros and fonts and utilities for doing
