@@ -48,7 +48,6 @@ updated when the .ltx file is saved.  Emacs will also know about the
 %build
 
 cc $RPM_OPT_FLAGS -s -o zhconv %{SOURCE2}
-cd cjk-4.7.0/utils
 cd hbf2gf; chmod ugo+x ./configure ./config.sub ./config.guess;
 ./configure --prefix=/usr/share/texmf --with-kpathsea-dir=/usr
 make
@@ -69,7 +68,7 @@ cc $RPM_OPT_FLAGS -s -o cefsconv cefsconv.c
 rm -rf %{buildroot}
 
 mkdir -p %{buildroot}/usr/share/texmf/tex/CJK
-(cd cjk-4.7.0/texinput; \
+(cd texinput; \
  tar cf - . | (cd %{buildroot}/usr/share/texmf/tex/CJK; tar xf -))
 
 mkdir -p %{buildroot}%{_bindir}
@@ -83,7 +82,6 @@ mkdir -p %{buildroot}/usr/share/texmf/ttf2pk
 cp %{SOURCE4} %{buildroot}/usr/share/texmf/fontname
 cp %{SOURCE5} %{buildroot}/usr/share/texmf/ttf2pk
 
-cd cjk-4.7.0
 cd utils
  cd hbf2gf
   cp hbf2gf %{buildroot}%{_bindir}
