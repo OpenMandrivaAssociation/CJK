@@ -48,7 +48,7 @@ updated when the .ltx file is saved.  Emacs will also know about the
 %build
 
 cc $RPM_OPT_FLAGS -s -o zhconv %{SOURCE2}
-cd hbf2gf; chmod ugo+x ./configure ./config.sub ./config.guess;
+cd utils/hbf2gf; chmod ugo+x ./configure ./config.sub ./config.guess;
 ./configure --prefix=/usr/share/texmf --with-kpathsea-dir=/usr
 make
 cd ../Bg5conv
@@ -127,7 +127,7 @@ exit 0
 
 %files
 %defattr(-,root,root)
-%doc cjk-4.7.0/doc/*
+%doc doc/*
 %{_bindir}/*
 %{_mandir}/man1/*
 %{_datadir}/texmf/fontname/*
@@ -139,4 +139,4 @@ exit 0
 
 %files emacs
 %defattr(-,root,root)
-/usr/share/emacs/site-lisp/*.el
+%{_datadir}/emacs/site-lisp/*.el
