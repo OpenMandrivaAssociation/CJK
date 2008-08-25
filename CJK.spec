@@ -1,10 +1,10 @@
 Name: CJK
 Summary: LaTeX2e macro package for Chinese/Japanese/Korean scripts
-License: GPL
+License: GPLv2+
 Group: Publishing
 URL:	http://cjk.ffii.org/
-Version: 4.7.0
-Release: %mkrel 3
+Version: 4.8.1
+Release: %mkrel 1
 
 # Source0 is a tarball of the CJK files stored in the FTP directory,
 # they are stored there unpacked.
@@ -43,13 +43,7 @@ updated when the .ltx file is saved.  Emacs will also know about the
 .cjk.ltx file when it runs latex, xdvi, or dvips.
 
 %prep
-
-%setup -q -c
-%setup -q -D -T
-
-# Fix to the emacs lisp code
-
-#%patch2 -p1
+%setup -q -n cjk-%version
 
 %build
 
