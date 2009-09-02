@@ -104,7 +104,7 @@ tar xjf %{SOURCE1} -C %{buildroot}/usr/share
 
 mkdir -p %{buildroot}/usr/share/emacs/site-lisp
 (cd utils/lisp && \
- cp *.el emacs-20.3/*.el %{buildroot}/usr/share/emacs/site-lisp)
+ cp *.el emacs*/*.el %{buildroot}/usr/share/emacs/site-lisp)
 
 %post
 (cd /usr/share/texmf/fontname; cat special.map.add >> special.map)
