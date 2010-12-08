@@ -4,7 +4,7 @@ License: GPLv2+
 Group: Publishing
 URL:	http://cjk.ffii.org/
 Version: 4.8.1
-Release: %mkrel 2
+Release: %mkrel 3
 
 # Source0 is a tarball of the CJK files stored in the FTP directory,
 # they are stored there unpacked.
