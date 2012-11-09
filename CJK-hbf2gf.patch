@@ -1,0 +1,20 @@
+diff -ru CJK-4.2.0/CJK/4_2.0/utils/hbf2gf/hbf2gf.c~ CJK-4.2.0/CJK/4_2.0/utils/hbf2gf/hbf2gf.c
+--- CJK-4.2.0/CJK/4_2.0/utils/hbf2gf/hbf2gf.c~	Sun Dec 13 04:00:00 1998
++++ CJK-4.2.0/CJK/4_2.0/utils/hbf2gf/hbf2gf.c	Mon May 17 13:49:53 1999
+@@ -2170,10 +2170,16 @@
+ char*name;
+ 
+ {
++#if 0
+ #ifdef VERY_OLD_KPATHSEA
+ return kpse_find_file(name,kpse_dvips_header_format,TRUE);
+ #else
+ return kpse_find_file(name,kpse_type1_format,TRUE);
++#endif
++#else
++strcpy(name_buffer, "/usr/share/texmf/fonts/hbf/");
++strcat(name_buffer, name);
++return name_buffer;
+ #endif
+ }
+ 

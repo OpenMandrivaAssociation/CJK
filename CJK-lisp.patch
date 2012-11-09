@@ -1,0 +1,13 @@
+diff -ru CJK-4.2.0/CJK/4_2.0/utils/lisp/emacs-20.3/cjk-enc.el~ CJK-4.2.0/CJK/4_2.0/utils/lisp/emacs-20.3/cjk-enc.el
+--- CJK-4.2.0/CJK/4_2.0/utils/lisp/emacs-20.3/cjk-enc.el~	Sun Dec 13 04:00:00 1998
++++ CJK-4.2.0/CJK/4_2.0/utils/lisp/emacs-20.3/cjk-enc.el	Mon May 17 17:24:19 1999
+@@ -649,7 +649,8 @@
+     (message "Saving %s and %s" bufname newbufname)
+     (let ((coding-system-for-write 'cjk-coding))
+       (write-region (point-min) (point-max) newbufname))
+-    (save-buffer)))
++    ;(save-buffer)
++    ))
+ 
+ 
+ ;;; EOF
