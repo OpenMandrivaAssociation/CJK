@@ -1,7 +1,3 @@
 sources:
-  "cjk-420-mdk.tar.bz2:"	4915d057c08830aca6eff19f87dc867f25299a54
-  "cjk-4.8.1.tar.gz:"	d0e0de1f381b05d6f945b4e60b756d96589f3a79
-  "special.map.add:"	db3e8be7de477d619bf1f20fb01d5107326d683e
-  "ttfonts.map.add:"	c2fcdad3ba3983b1aec095e27ce50eb073a83f11
-  "zhconv.c:"	f97f103022a416414316351214932f02ae49a6eb
-  "zhlatex:"	47a9fe5d5eb5126b99a695d2ed945bb09d8db0a2
+  "cjk-4.8.1.tar.gz": d0e0de1f381b05d6f945b4e60b756d96589f3a79
+  "cjk-420-mdk.tar.bz2": 4915d057c08830aca6eff19f87dc867f25299a54

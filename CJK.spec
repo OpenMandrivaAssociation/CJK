@@ -140,3 +140,88 @@ exit 0
 %files emacs
 %defattr(-,root,root)
 %{_datadir}/emacs/site-lisp/*.el
+
+
+%changelog
+* Wed Dec 08 2010 Oden Eriksson <oeriksson@mandriva.com> 4.8.1-3mdv2011.0
++ Revision: 616412
+- the mass rebuild of 2010.0 packages
+
+* Wed Sep 02 2009 Thierry Vignaud <tv@mandriva.org> 4.8.1-2mdv2010.0
++ Revision: 424991
+- fix build
+- rebuild
+
+* Mon Aug 25 2008 Funda Wang <fwang@mandriva.org> 4.8.1-1mdv2009.0
++ Revision: 275848
+- fix dir
+- fix dir
+- New version 4.8.1
+
+* Tue Jul 22 2008 Thierry Vignaud <tv@mandriva.org> 4.7.0-3mdv2009.0
++ Revision: 240502
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+- s/Mandrake/Mandriva/
+- convert prereq
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Funda Wang <fwang@mandriva.org>
+    - correct source url
+
+* Sun Apr 29 2007 Funda Wang <fwang@mandriva.org> 4.7.0-1mdv2008.0
++ Revision: 19099
+- bunzip2 the patches.
+- New upstream release 4.7.0
+- Import CJK
+
+
+
+* Sun Oct 31 2004 Christiaan Welvaart <cjw@daneel.dyndns.org> 4.2.0-7mdk
+- fix old tar option
+
+* Thu May 01 2003 Stefan van der Eijk <stefan@eijk.nu> 4.2.0-6mdk
+- BuildRequires
+- add URL
+
+* Thu Dec 06 2001 Stefan van der Eijk <stefan@eijk.nu> 4.2.0-5mdk
+- fix %%files
+
+* Thu Sep 13 2001 Stefan van der Eijk <stefan@eijk.nu> 4.2.0-4mdk
+- BuildRequires:	tetex
+
+* Mon Jun 18 2001 David BAUDENS <baudens@mandrakesoft.com> 4.2.0-3mdk
+- Use %%_tmppath for BuildRoot
+- Bzip2 Sources and Patches
+- Learn to setup to say nothing when it works
+
+* Sun Jun 03 2001 Jesse Kuang <kyx@mandrakesoft.com> 4.2.0-2mdk
+- change group to Publishing
+
+* Sun Jun 03 2001 Jesse Kuang <kjx@mandrakesoft.com> 4.2.0-1mdk
+- porting from CLE
+- support TrueType for BIG5/GBK/GB
+
+* Wed Jan 10 2001 Chih-Wei Huang <cwhuang@linux.org.tw>
+- rebuilt for CLE v1.0
+- add slant/bold to font def
+
+* Mon Jan 17 2000 Chih-Wei Huang <cwhuang@linux.org.tw>
+- Fix for Arphic Fonts
+
+* Tue Jul 20 1999 Chih-Wei Huang <cwhuang@linux.org.tw>
+- Split fonts into another packages to reduce size
+- Add more Requires & Prereq
+
+* Mon Jul 19 1999 Chih-Wei Huang <cwhuang@linux.org.tw>
+- Remove Chinese fonts
+- Split fonts into Japanese and Korean packages
+
+* Thu Jun 24 1999 Chih-Wei Huang <cwhuang@linux.org.tw>
+- Modify for CLE
+
+* Tue May 18 1999 David Fox <dsf@pipeline.ucsd.edu>
+- Release 5: Truetype support.
+- Release 4: Moved hbf subdirectory into $TEXMF/fonts/type1
