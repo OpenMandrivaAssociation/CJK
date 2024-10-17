@@ -2,7 +2,7 @@ Name: CJK
 Summary: LaTeX2e macro package for Chinese/Japanese/Korean scripts
 License: GPLv2+
 Group: Publishing
-URL:	http://cjk.ffii.org/
+URL:	https://cjk.ffii.org/
 Version: 4.8.1
 Release: %mkrel 3
 
